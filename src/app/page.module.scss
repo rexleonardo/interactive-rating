@@ -1,0 +1,163 @@
+.mainContainer {
+    border-radius: 15px;
+    max-width: 327px;
+    padding: 24px 24px 32px;
+    background: radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
+
+    .hide {
+        display: none;
+    }
+
+    .iconStarContainer {
+        margin-bottom: 16px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        background-color: var(--dark-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .iconStar {
+            width: 13.96px;
+            height: 13.33px;
+        }
+    }
+    
+    .illustrationThankYouContainer {
+        margin-top: 10px;
+
+        .illustrationThankYou {
+            width: 144px;
+            height: 96px;
+        }
+    }
+    
+    .submittedRating {
+        margin: 24px 0;
+        border-radius: 22.5px;
+        padding: 5px 12px;
+        background-color: var(--dark-blue);
+        color: var(--orange);
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .rateContainer {
+        margin: 24px 0 24px;
+        display: flex;
+        justify-content: space-between;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        span {
+            border-radius: 100%;
+            width: 42px;
+            height: 42px;
+            background-color: var(--dark-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--medium-grey);
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        span:hover {
+            background-color: var(--medium-grey);
+            color: var(--white);
+            transition: 200ms;
+        }
+
+        input:checked + label {
+            span {
+                background-color: var(--orange);
+                color: var(--white);
+            }
+         }
+    }
+
+    .submitButton {
+        border-radius: 22.5px;
+        width: 100%;
+        padding: 12px 0 12px;
+        background-color: var(--orange);
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.867px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .submitButton:hover {
+        background-color: var(--white);
+        color: var(--orange);
+        transition: 200ms;
+    }
+}
+
+@media (min-width: 425px) {
+
+    .mainContainer {
+        border-radius: 30px;
+        max-width: 412px;
+        padding: 32px 36px;
+
+        .iconStarContainer {
+            margin-bottom: 30px;
+            width: 48px;
+            height: 48px;
+
+            .iconStar {
+                width: 16.75px;
+                height: 16px;
+            }
+        }
+
+        .illustrationThankYouContainer {
+            margin-top: 13px;
+    
+            .illustrationThankYou {
+                width: 162px;
+                height: 108px;
+            }
+        }
+
+        .submittedRating {
+            margin: 32px 0;
+            padding: 4px 19px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .rateContainer {
+            margin: 24px 0 32px;
+
+            span {
+                width: 51px;
+                height: 51px;
+                font-size: 16px;
+            }
+        }
+
+        .submitButton {
+            padding: 11px 0;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
